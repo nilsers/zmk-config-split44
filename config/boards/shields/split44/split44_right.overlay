@@ -1,4 +1,4 @@
-#include "corne.dtsi"
+#include "split44.dtsi"
 
 &default_transform {
     col-offset = <7>;
