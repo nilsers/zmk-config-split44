@@ -3,9 +3,22 @@ if SHIELD_SPLIT44_LEFT
 config ZMK_KEYBOARD_NAME
     default "Split44"
 
+CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPLIT44_RIGHT
+
+CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
 endif
 
 if SHIELD_SPLIT44_LEFT || SHIELD_SPLIT44_RIGHT
+
+config CONFIG_BT
+    default y
 
 config ZMK_SPLIT
     default y
